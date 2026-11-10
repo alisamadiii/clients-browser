@@ -1,0 +1,31 @@
+name: ClientsBrowser
+options:
+  bundleIdPrefix: com.alisamadi
+  deploymentTarget:
+    macOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+    SWIFT_APPROACHABLE_CONCURRENCY: YES
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  ClientsBrowser:
+    type: application
+    platform: macOS
+    sources:
+      - ClientsBrowser
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.alisamadi.clientsbrowser
+        PRODUCT_NAME: Clients Browser
+        INFOPLIST_FILE: ClientsBrowser/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: ClientsBrowser/Resources/ClientsBrowser.entitlements
+        # Stable identity so Keychain (backup passphrase) survives rebuilds.
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: "Apple Development: a@alisamadii.com (DBW9AS9A96)"
+        ENABLE_HARDENED_RUNTIME: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        COMBINE_HIDPI_IMAGES: YES

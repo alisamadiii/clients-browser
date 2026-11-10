@@ -1,0 +1,11 @@
+# Xcode / xcodegen
+build/
+*.xcodeproj
+xcuserdata/
+DerivedData/
+
+# macOS
+.DS_Store
+
+# Local tooling
+.claude/
