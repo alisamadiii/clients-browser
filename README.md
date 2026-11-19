@@ -1,3 +1,5 @@
+> **This repo has moved.** It now lives in [alisamadiii/agency-toolkit](https://github.com/alisamadiii/agency-toolkit/tree/main/apps/clients-browser). This repo is archived.
+
 <p align="center">
   <img src="ClientsBrowser/Resources/Assets.xcassets/AppIcon.appiconset/icon_256.png" width="128" alt="Clients Browser icon">
 </p>
